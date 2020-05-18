@@ -1,17 +1,16 @@
 import React from "react";
 import "./App.css";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import { Router } from "@reach/router";
+import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   return (
     <div className="App">
-      <Typography variant="h1" gutterBottom="true">
-        PWA/Material UI test
-      </Typography>
-      <Button variant="contained" color="primary" size="large">
-        LIKE AND SUBSCRIBE
-      </Button>
+      <Router>
+        <Home path="/" />
+        <About path="/about" />
+      </Router>
     </div>
   );
 }

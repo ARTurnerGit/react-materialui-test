@@ -1,3 +1,8 @@
+body {
+  background-color: aquamarine;
+  opacity: 1;
+  z-index: -1;
+}
 .App {
   text-align: center;
 }
